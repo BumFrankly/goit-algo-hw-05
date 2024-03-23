@@ -57,7 +57,6 @@ if __name__ == "__main__":
         filtered_logs = filter_logs_by_level(logs, level.upper())
         display_log_counts(count_logs_by_level(filtered_logs))
         
-        # Вивід деталей логів для конкретного рівня
         if level.upper() in ["ERROR", "WARNING", "INFO", "DEBUG"]:
             print(f"\nДеталі логів для рівня '{level.upper()}':")
             for log in filtered_logs:
